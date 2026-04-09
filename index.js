@@ -4,7 +4,7 @@ import { z } from "zod";
 
 let server = new McpServer({
   name: "CustomTracked",
-  version: "1.0.0",
+  version: "4.0.0",
 });
 
 let numberPairSchema = {
