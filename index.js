@@ -30,8 +30,17 @@ server.tool(
   })
 );
 
+server.tool(
+  "subtract",
+  "Subtract two numbers.",
+  numberPairSchema,
+  async ({ a, b }) => ({
+    content: [{ type: "text", text: String(a - b) }],
+  })
+);
+
 server.resource(
-  "calculator-help",
+  "calculator-help-v2",
   "memory://calculator/help",
   {
     description: "Example inputs for the calculator tools.",
@@ -46,6 +55,7 @@ server.resource(
             tools: {
               add: { a: 2, b: 3 },
               multiply: { a: 2, b: 3 },
+              subtract: { a: 2, b: 3 },
             },
             examples: [
               "add(a=2, b=3) => 5",
