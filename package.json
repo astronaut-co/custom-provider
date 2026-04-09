@@ -1,0 +1,12 @@
+{
+  "name": "custom-provider-tracked",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@metorial/mcp-server": "latest",
+    "@modelcontextprotocol/sdk": "latest",
+    "zod": "latest"
+  }
+}
+
